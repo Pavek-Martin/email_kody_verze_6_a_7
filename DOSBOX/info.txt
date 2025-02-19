@@ -1,0 +1,2 @@
+toto je verze programu např. pro emulátor Dosbox , konzoli mister FPGA apod.
+
