@@ -1,0 +1,6 @@
+
+linuxove verze jsou v adresari verze_pro_linux, posledni verze je v adresari verze_6.2_bash a je multiuzivatelska
+
+
+
+
