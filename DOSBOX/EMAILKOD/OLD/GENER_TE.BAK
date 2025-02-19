@@ -1,0 +1,14 @@
+@echo off
+luac -o generuj.out generuj.lua
+lua generuj.out 23 test
+lua generuj.out 24 test
+lua generuj.out 25 test
+lua generuj.out 26 test
+lua generuj.out 27 test
+lua generuj.out 28 test
+lua generuj.out 29 test
+lua generuj.out 30 test
+lua generuj.out 31 test
+pause
+@echo on
+

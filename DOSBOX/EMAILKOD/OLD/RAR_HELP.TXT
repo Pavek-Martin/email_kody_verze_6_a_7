@@ -1,0 +1,55 @@
+
+  RAR 2.06      Copyright (c) 1993-98 Eugene Roshal      3 December 1998
+  Shareware version        Type RAR -? for help
+
+Usage:     RAR <command> -<switch 1> -<switch N> <archive> <files...>
+               <@listfiles...> <path_to_extract\>
+       or  RAR
+
+<Commands>
+  a     Add files to archive          u    Update files in archive
+  f     Freshen files in archive      m[f] Move to archive [files only]
+  x     Extract files with full path  e    Extract files to current directory
+  d     Delete files from archive     v    Verbosely list contents of archive
+  r     Repair archive                l    List contents of archive
+  p     Print file to stdout          s    Convert archive to SFX
+  t     Test archive files            c    Add archive comment
+  en    Enter to archive              cf   Add files comment
+  k     Lock archive                  cw   Write archive comment to file
+  rr[N] Add data recovery record
+
+<Switches>
+  rr[N] Add data recovery record      mm[f] Multimedia compression [force]
+  o+    Overwrite existing files      o-    Do not overwrite existing files
+  bw    Black & white mode            col   Color mode
+  y     Assume Yes on all queries     sfx   Create SFX archives
+  std   Stdout mode                   b     Enable backup archives
+  f     Freshen files                 u     Update files
+  c-    Disable comments show         ed    Do not add empty directories
+  ep    Exclude paths from names      ep1   Exclude base dir from names
+  tk    Keep original archive time    tl    Set archive time to latest file
+  cfg-  Disable read configuration    ems-  Disable expanded memory usage
+  s[e,<N>]      Create solid archive
+  s-            Disable solid archiving
+  r             Recurse subdirectories
+  r0            Recurse subdirectories for wildcard names only
+  z<file>       Read archive comment from file
+  x<file>       Exclude specified file
+  x@<list>      Exclude files in specified list file
+  v             Create volumes with size autodetection
+  v<N>[k,b,f]   Create volumes with size=<N>*1000 [*1024, *1]
+  vd            Erase disk contents before creating volume
+  p<password>   Set password
+  p-            Do not query password
+  kb            Keep broken extracted files
+  w<path>       Assign work directory
+  m<0..5>       Set compression level (0-store...3-default...5-maximal)
+
+  Press any key to continue ...
+  av            Put authenticity verification (registered versions only)
+  av-           Disable AV check
+  ds            Disable name sort for solid archive
+  $[drive]      Add/extract volume label
+  dh            Disable file sharing
+  ac            Clear Archive attribute after compression
+  ao            Add files with Archive attribute set

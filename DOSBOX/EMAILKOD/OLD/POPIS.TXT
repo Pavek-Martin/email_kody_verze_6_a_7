@@ -1,0 +1,32 @@
+
+verze pro ms-dos, dosbox Mister FPGA apod. :)
+za prve vyrazne se skratila delka souboru hesel, protoze je mozno
+generovat nove hesl vzdy jednou za hodinu misto po minute
+je to zduvodu nazvu souboru na 8 pismen v ms-dosu, takze minuty se uz nevesli
+format nazvu je DDMMRRHH.rar den,mesic,rok (23,24 atd.) a hodina
+slozky "ARCHIVY" a "HESLA" jsou na pevno a nedaji se menit
+(slo by to jen editaci kodu)
+
+soubory lua.exe a luac.exe nechat kde jsou a soubory rar.exe a sleep.exe
+nekam do cesty v prommene PATH (klasika)
+spustenim zasifruj.bat se v adresari "ARCHIVY" vytvori slozka z datumem
+v nazvu, popsano vyse a davka ddmmrrhh.bat tedy stejny nazev jako vytvorena
+slozka. adresar naplnit cimkoliv a potom *.bat spustit.
+program archiv zamika prikaz rar k nazev.rar takze nelze updatovat novy obsah
+kompilce zdrojaku *.lua do *.out prikazem
+luac -o output.out input.lua
+je to pak trochu rychlejsi, no neni vlasten potreba krom generatoru hesel
+
+v adersari "archivy" udrzovat jen hotove soubory za priponou rar
+vse ostatni mazat
+desifruj.bat provadi provadi samozdrejme opak, vse je v podstate
+stejne jako ve verzi pro PowerShell
+v dos navigatoru zle prohlizet obsah archivu (obr. 4.jpg)
+
+zajimalo me jestli by program fungoval take zde a myslim ze se zadarilo
+pripoustim za je to vlasne zadne prakticke vyuziti nema ale potesilo to
+
+ps: generator hesel pricita misto 60 hodnotu 3600, tedy krok po hodine
+nastavuje se tam editaci kodu minimalni a maximalni delka generovaneho hesla
+rok jako parametr arg[1] se zadava napr. 23 misto 2023 ve verzi pro PowerShell
+tedy napr. "lua.exe generuj.lua 23" a nebo "lua.exe generuj.lua 23 test"
