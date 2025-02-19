@@ -1,0 +1,37 @@
+#!/usr/bin/bash
+clear
+cas=$(date +%H' : '%M)
+#echo $cas
+figlet $cas
+tyden=$(date +%U" tyden v roce")
+datum=$(date +%d' . '%m' . '%Y)
+mes=$(date +%m)
+#echo $datum
+#figlet $datum
+den=$(date +%w)
+dc=("Nedele" "Pondeli" "Utery" "Streda" "Ctvrtek" "Patek" "Sobota")
+me=("Leden" "Unor" "Brezen" "Duben" "Kveten" "Cerven" "Cervenec" "Srpen" "Zari" "Rijen" "Listopad" "Prosinec")
+den2=${dc[den]}
+#echo $mes
+if [ ${mes:0:1} == "0" ]
+then
+mes=${mes:1:1}
+fi
+mes2=${me[mes - 1]}
+#echo $den
+figlet $den2
+echo $(date +%z)" UTC"
+echo $mes2
+echo $tyden
+ncal -M
+
+declare -a dc=([0]="Nedele" [1]="Pondeli" [2]="Utery" [3]="Streda" [4]="Ctvrtek" [5]="Patek" [6]="Sobota")
+echo $(date +%U) tyden v roce
+
+%j     day of year (001..366)
+%N     nanoseconds (000000000..999999999)
+%u     day of week (1..7); 1 is Monday
+%W     week number of year, with Monday as first day of week (00..53)
+%q     quarter of year (1..4)
+%U     week number of year, with Sunday as first day of week (00..53)
+%V     ISO week number, with Monday as first day of week (01..53)

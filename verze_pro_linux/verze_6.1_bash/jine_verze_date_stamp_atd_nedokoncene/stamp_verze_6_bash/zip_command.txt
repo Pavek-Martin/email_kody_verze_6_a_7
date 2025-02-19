@@ -1,0 +1,3 @@
+zip -r -9 -y -UN=UTF8 -P 'zdeHeslo' -c < totoJeKomentarZip archiv.zip adresar_zip
+&& sleep 3; unzip zip -t -P 'zdeHeslo' archiv.zip 
+&& rm -v totoJeKomentarZip
